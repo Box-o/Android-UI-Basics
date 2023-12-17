@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF9"
+    tools:context=".ViewsArrange">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/ChangeTextColor"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="우리의 사진 앱은 마치 감성적인 브러시로 그린 듯한 아름다운 순간을 담아내어, 특별한 순간들을 표현하는 데 최적화되어 있어요. 앱을 열면 마치 아티스트처럼 느낄 수 있죠!"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/pastelPeach"
+        android:onClick="doAction3_1"
+        android:text="리니어 레이아웃 실습으로 이동"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastelBlue"
+        android:text="AAA"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/pastelBlue"
+        android:text="BBB"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/button4"
+        app:layout_constraintStart_toEndOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastelBlue"
+        android:text="CCC"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+
+    <TextView
+        android:id="@+id/GravityCen1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="center_horizontal|bottom"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/GravityCen2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="center"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/GravityCen1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/GravityCen3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="center_horizontal|top"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/GravityCen2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Gravityleft1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="left|bottom"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/GravityCen1" />
+
+    <TextView
+        android:id="@+id/GravityRight1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="right|bottom"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/GravityCen1" />
+
+    <TextView
+        android:id="@+id/GravityLeft2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="center_vertical|left"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/GravityCen1"
+        app:layout_constraintEnd_toStartOf="@id/GravityCen2" />
+
+    <TextView
+        android:id="@+id/GravityRight2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="center_vertical|right"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/GravityCen1"
+        app:layout_constraintStart_toEndOf="@id/GravityCen2" />
+
+    <TextView
+        android:id="@+id/GravityLeft3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="left|top"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/GravityCen2"
+        app:layout_constraintEnd_toStartOf="@id/GravityCen3" />
+
+    <TextView
+        android:id="@+id/GravityRight3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edgeround"
+        android:backgroundTint="@color/pastelPurple"
+        android:gravity="right|top"
+        android:text="⭐️"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/GravityCen2"
+        app:layout_constraintStart_toEndOf="@id/GravityCen3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

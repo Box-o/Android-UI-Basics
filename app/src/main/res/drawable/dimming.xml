@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:drawable="@drawable/img_main" android:state_pressed="true"/>-->
+<!--    <item android:drawable="@drawable/img_main"/>-->
+<!--    <solid android:color="#33000000"/>-->
+<!--    버튼처럼 사용할 이미지 뷰에 어둡게 효과 적용하는 방법?-->
+
+<!--    <item android:state_selected="false" android:backgroundTint="@color/colorListDivider"/>-->
+<!--    <item android:backgroundTint="@color/colorListDividerSel" />-->
+
+    <item android:state_pressed="true" android:drawable="@drawable/agoda_hotelonclick" />
+    <item android:drawable="@drawable/agoda_hotel" />
+
+<!--    <item android:state_pressed="true">-->
+<!--        <bitmap android:src="@drawable/agoda_hotelonclick"-->
+<!--            android:tileMode="disabled"-->
+<!--            android:tint="@android:color/black"-->
+<!--            android:tintMode="multiply"/>-->
+<!--    </item>-->
+<!--    <item android:drawable="@android:color/transparent" />-->
+
+
+</selector>

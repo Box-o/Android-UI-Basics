@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#D89D46</color>
+
+    <!-- 트렌디한 파스텔톤 추가 -->
+    <color name="pastelPink">#FFD9B3B3</color>
+    <color name="pastelBlue">#FFB3D9D9</color>
+    <color name="pastelGreen">#FFB3D9B3</color>
+    <color name="pastelPurple">#FFD9B3D9</color>
+    <color name="pastelYellow">#FFFFE680</color>
+    <color name="pastelMint">#FFB3D9C6</color>
+    <color name="pastelLavender">#FFC6B3D9</color>
+    <color name="pastelPeach">#FFF0D9B3</color>
+    <color name="pastelTurquoise">#FFB3D9C6</color>
+    <color name="pastelLilac">#CA9BDA</color>
+
+    <color name="colorListDivider">#CEFF1D1D</color>
+    <color name="colorListDividerSel">#A9000000</color>
+
+</resources>
