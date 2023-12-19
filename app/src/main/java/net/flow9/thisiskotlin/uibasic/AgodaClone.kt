@@ -1,12 +1,13 @@
 package net.flow9.thisiskotlin.uibasic
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import android.widget.ImageView
 import android.view.MotionEvent
-
+import android.view.View
 
 
 class AgodaClone : AppCompatActivity() {
@@ -20,17 +21,16 @@ class AgodaClone : AppCompatActivity() {
 //            hotell.setImageDrawable(R.drawable.agoda_hotelonclick)
 //        }
         hotell.setOnClickListener {
-            hotell.setImageResource(R.drawable.agoda_hotelonclick)
+            hotell.setImageResurce(R.drawable.agoda_hotelonclick)
         }
 //이미지 원래대로 어케바꿈?
 */
-
-
-
-
-
-
-
-
     }
+    fun doAction5(view: View) {
+        Toast.makeText(view.context, "자 드가자", Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this, AgodaLogin::class.java)
+        startActivity(intent)
+    }
+
 }

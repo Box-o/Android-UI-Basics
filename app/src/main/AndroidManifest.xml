@@ -13,8 +13,24 @@
         android:theme="@style/Theme.UIBasic"
         tools:targetApi="31">
         <activity
-            android:name=".AgodaClone"
+            android:name=".AgodaCreateAccount"
             android:exported="false" />
+        <activity
+            android:name=".AgodaLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaClone"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+            <!-- 암시적 인텐트를 수신하고자 하는 엑티비티 안에 인텐트 필터를 적용한다 -->
+
+        </activity>
         <activity
             android:name=".LinearLayoutActivity"
             android:exported="false" />
