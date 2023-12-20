@@ -46,6 +46,12 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, AgodaClone::class.java)
         startActivity(intent)
     }
+    fun doAction6(view: View) {
+        Toast.makeText(view.context, "자 드가자", Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this, AgodaCloneLinear::class.java)
+        startActivity(intent)
+    }
 }
 
 /* 암시적 인텐트로 다른 엑티비티 시작 = 이건 스텐다드에 사용하면 될듯

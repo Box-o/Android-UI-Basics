@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgodaMyInfo">
+
+    <ImageView
+        android:id="@+id/ohoh"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ohohoh" />
+
+    <TextView
+        android:id="@+id/ohwish"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="아고다에 가입한 것을 축하 한다!\n이 세계의 모든 포켓몬을 기록한 완벽한 도감을 만드는 것!\n너희들이 나를 대신해서 꿈을 이뤄줬으면 한단다!"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ohoh" />
+
+    <TextView
+        android:id="@+id/ididid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ohwish" />
+
+    <TextView
+        android:id="@+id/namename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ididid" />
+
+    <Button
+        android:id="@+id/gotosignin"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Go to Sign In"
+        android:textSize="17sp"
+        android:fontFamily="@font/agoda_bold"
+        android:backgroundTint="@color/pastelPink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namename"
+        android:layout_marginTop="40dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

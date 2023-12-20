@@ -86,6 +86,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_pw_input" />
 
+<!--    android:onClick="doAction7_1"-->
+
     <TextView
         android:id="@+id/tv_signup"
         android:layout_width="wrap_content"

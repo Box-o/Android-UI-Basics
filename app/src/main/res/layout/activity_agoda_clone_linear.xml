@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7FCFF"
+    tools:context=".AgodaClone">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/agoda_logo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="118dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView1"
+        app:layout_constraintStart_toEndOf="@id/imageView1"
+        app:layout_constraintTop_toTopOf="@id/imageView1"
+        app:srcCompat="@drawable/agoda_vipplatinum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Sign In"
+        android:textSize="14sp"
+        android:onClick="doAction5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:fontFamily="@font/agoda_light"
+            android:text="Welcome,\nMr.Sangwoo"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/agoda_bold"
+        android:text="Platinum"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView2"
+        app:layout_constraintStart_toStartOf="@id/imageView2"
+        app:layout_constraintTop_toTopOf="@id/imageView2" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_hotel"
+        android:layout_width="247dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        android:clickable="true"
+        app:srcCompat="@drawable/dimming" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Hotel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_hotel"
+        app:layout_constraintTop_toTopOf="@id/iv_hotel" />
+
+    <ImageView
+        android:id="@+id/iv_flight"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/iv_hotel"
+        app:layout_constraintEnd_toEndOf="@id/iv_private"
+        app:layout_constraintStart_toStartOf="@id/iv_private"
+        app:layout_constraintTop_toTopOf="@id/iv_hotel"
+        app:srcCompat="@drawable/agoda_flight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Flight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_flight"
+        app:layout_constraintTop_toTopOf="@id/iv_flight" />
+
+    <ImageView
+        android:id="@+id/iv_rent"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@id/iv_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_hotel"
+        app:srcCompat="@drawable/agoda_timerent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Rent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_rent"
+        app:layout_constraintTop_toTopOf="@id/iv_rent" />
+
+    <ImageView
+        android:id="@+id/iv_activity"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/iv_rent"
+        app:layout_constraintEnd_toStartOf="@id/iv_private"
+        app:layout_constraintStart_toEndOf="@id/iv_rent"
+        app:layout_constraintTop_toTopOf="@id/iv_rent"
+        app:srcCompat="@drawable/agoda_activity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Activity"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_activity"
+        app:layout_constraintTop_toTopOf="@id/iv_activity" />
+
+    <ImageView
+        android:id="@+id/iv_private"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/iv_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_activity"
+        app:layout_constraintTop_toTopOf="@id/iv_activity"
+        app:srcCompat="@drawable/agoda_privateplace" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Private"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_private"
+        app:layout_constraintTop_toTopOf="@id/iv_private" />
+
+    <ScrollView
+        android:id="@+id/werwer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_private">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/agoda_medium"
+                android:text="Promotion - Holiday trip deal"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mother" />
+
+            <ImageView
+                android:id="@+id/iv_promo1"
+                android:layout_width="270dp"
+                android:layout_height="175dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_promo"
+                app:srcCompat="@drawable/agoda_promo1" />
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/agoda_medium"
+                android:gravity="center"
+                android:text="DECEMBER\nHOT SALE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="@id/iv_promo1"
+                app:layout_constraintStart_toStartOf="@id/iv_promo1"
+                app:layout_constraintTop_toTopOf="@id/iv_promo1" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:fontFamily="@font/agoda_medium"
+                android:gravity="center"
+                android:text="UP TO\n25% OFF\nSHOP NOW"
+                android:textColor="#4E4343"
+                android:textStyle="bold|italic"
+                android:textSize="23sp"
+                android:layout_marginTop="57dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_promo1"
+                app:layout_constraintStart_toStartOf="@+id/iv_promo1"
+                app:layout_constraintTop_toTopOf="@+id/iv_promo1" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:fontFamily="@font/agoda_medium"
+                android:gravity="center"
+                android:text="UP TO\n25% OFF\nSHOP NOW"
+                android:textColor="#F3FF3232"
+                android:textStyle="bold|italic"
+                android:textSize="23sp"
+                android:layout_marginTop="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_promo1"
+                app:layout_constraintStart_toStartOf="@+id/iv_promo1"
+                app:layout_constraintTop_toTopOf="@+id/iv_promo1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/parent11"
+                app:layout_constraintTop_toTopOf="@id/parent11"
+                app:layout_constraintBottom_toBottomOf="@id/parent11"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_promo2"
+                    android:layout_width="270dp"
+                    android:layout_height="175dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="15dp"
+
+                    app:srcCompat="@drawable/agoda_promo1" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/agoda_medium"
+                    android:gravity="center"
+                    android:text="DECEMBER\nHOT SALE"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_promo2"
+                    app:layout_constraintStart_toStartOf="@+id/iv_promo2"
+                    app:layout_constraintTop_toTopOf="@+id/iv_promo2" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/agoda_medium"
+                    android:gravity="center"
+                    android:text="UP TO\n25% OFF\nSHOP NOW"
+                    android:textColor="#4E4343"
+                    android:textStyle="bold|italic"
+                    android:textSize="23sp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_promo2"
+                    app:layout_constraintStart_toStartOf="@+id/iv_promo2"
+                    app:layout_constraintTop_toTopOf="@+id/iv_promo2" />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:fontFamily="@font/agoda_medium"
+                    android:gravity="center"
+                    android:text="UP TO\n25% OFF\nSHOP NOW"
+                    android:textColor="#F3FF3232"
+                    android:textStyle="bold|italic"
+                    android:textSize="23sp"
+                    android:layout_marginTop="55dp"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_promo2"
+                    app:layout_constraintStart_toStartOf="@+id/iv_promo2"
+                    app:layout_constraintTop_toTopOf="@+id/iv_promo2" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <!--
+    <TextView
+        android:id="@+id/tv_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Promotion - Holiday trip deal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_private" />
+
+    <ImageView
+        android:id="@+id/iv_promo1"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_promo"
+        app:srcCompat="@drawable/agoda_promo1" />
+
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="DECEMBER\nHOT SALE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/iv_promo1"
+        app:layout_constraintStart_toStartOf="@id/iv_promo1"
+        app:layout_constraintTop_toTopOf="@id/iv_promo1" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#4E4343"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="57dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo1"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo1"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo1" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#F3FF3232"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo1"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo1"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo1" />
+-->
+
+
+
+<!--    <ImageView
+        android:id="@+id/iv_promo2"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_promo"
+        app:layout_constraintStart_toEndOf="@id/werwer"
+        app:layout_constraintTop_toTopOf="@id/werwer"
+        app:srcCompat="@drawable/agoda_promo1" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="DECEMBER\nHOT SALE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo2"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo2"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo2" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#4E4343"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="57dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo2"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo2"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo2" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#F3FF3232"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo2"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo2"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo2" />-->
+
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_promo1" />
+
+    <TextView
+        android:id="@+id/tv_promo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Promotion - Combine journey"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ImageView
+        android:id="@+id/iv_promo11"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_promo2"
+        app:srcCompat="@drawable/agoda_promo1" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="DECEMBER\nHOT SALE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo11"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo11"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo11" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#4E4343"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="57dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo11"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo11"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo11" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#F3FF3232"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo11"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo11"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo11" />
+
+    <ImageView
+        android:id="@+id/iv_promo22"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_promo11"
+        app:layout_constraintStart_toEndOf="@+id/iv_promo11"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo11"
+        app:srcCompat="@drawable/agoda_promo1" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="DECEMBER\nHOT SALE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo22"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo22"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo22" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#4E4343"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="57dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo22"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo22"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo22" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/agoda_medium"
+        android:gravity="center"
+        android:text="UP TO\n25% OFF\nSHOP NOW"
+        android:textColor="#F3FF3232"
+        android:textStyle="bold|italic"
+        android:textSize="23sp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_promo22"
+        app:layout_constraintStart_toStartOf="@+id/iv_promo22"
+        app:layout_constraintTop_toTopOf="@+id/iv_promo22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="end line"
+        app:layout_constraintTop_toBottomOf="@id/iv_promo11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.UIBasic"
         tools:targetApi="31">
         <activity
+            android:name=".AgodaMyInfo"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaCloneLinear"
+            android:exported="false" />
+        <activity
             android:name=".AgodaCreateAccount"
             android:exported="false" />
         <activity
