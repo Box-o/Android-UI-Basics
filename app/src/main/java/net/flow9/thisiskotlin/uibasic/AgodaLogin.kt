@@ -86,6 +86,5 @@ class AgodaLogin : AppCompatActivity() {
     //바보같은생각인게 위에서 변수에 위젯할당해서 버튼에다가 옽클릭 안줘도 실행잘됨 해결완~!!
 
 
-
 }
 

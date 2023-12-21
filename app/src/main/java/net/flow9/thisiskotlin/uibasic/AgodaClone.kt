@@ -22,7 +22,7 @@ class AgodaClone : AppCompatActivity() {
 //        }
         hotell.setOnClickListener {
             hotell.setImageResurce(R.drawable.agoda_hotelonclick)
-        }
+        }🔔
 //이미지 원래대로 어케바꿈?
 */
     }
@@ -31,6 +31,13 @@ class AgodaClone : AppCompatActivity() {
 
         val intent = Intent(this, AgodaLogin::class.java)
         startActivity(intent)
+    }
+
+    fun doRecYes(view: View) {
+        Toast.makeText(view.context, "조아요! 구독! 알림설정까지!", Toast.LENGTH_SHORT).show()
+    }
+    fun doRecNo(view: View) {
+        Toast.makeText(view.context, "싫어요, 쓰레기임", Toast.LENGTH_SHORT).show()
     }
 
 }
