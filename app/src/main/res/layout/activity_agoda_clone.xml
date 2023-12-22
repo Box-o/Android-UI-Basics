@@ -70,6 +70,18 @@
                     app:layout_constraintTop_toTopOf="@id/imageView2" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/mainViewPager"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="250dp"
+                android:scrollIndicators="bottom"/>
+
+
+
+<!--
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,6 +200,7 @@
                     app:layout_constraintTop_toTopOf="@id/iv_private" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+-->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -206,7 +219,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="15dp">
 
                     <ImageView
                         android:id="@+id/iv_promo1"
@@ -292,7 +306,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="15dp">
 
                     <ImageView
                         android:id="@+id/iv_promo11"
@@ -337,7 +352,6 @@
                         app:layout_constraintStart_toEndOf="@id/iv_promo33"
                         app:layout_constraintTop_toTopOf="@id/iv_promo33"
                         app:srcCompat="@drawable/promo44" />
-
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </HorizontalScrollView>
@@ -475,17 +489,15 @@
                     android:text="AgodaVip Platinum"
                     android:textSize="17sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toTopOf="parent"/>
                 <View
                     android:id="@+id/vipline"
                     android:layout_width="164dp"
                     android:layout_height="2dp"
                     android:layout_marginStart="15dp"
                     android:background="?android:attr/listDivider"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/viptitle" />
-
+                    app:layout_constraintTop_toBottomOf="@id/viptitle"
+                    app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -493,31 +505,30 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/agoda_medium"
                     android:text="As you are a VIP member,\nyou will get more discounts"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/vipline" />
-
+                    app:layout_constraintTop_toBottomOf="@id/vipline"
+                    app:layout_constraintStart_toStartOf="parent"/>
                 <TextView
                     android:id="@+id/vipexp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/edgeroundbottom"
-                    android:fontFamily="@font/agoda_light"
-                    android:gravity="center"
                     android:paddingBottom="3dp"
-                    android:text="Your VIP Platinum rating will expire in 79 days"
+                    android:gravity="center"
+                    android:fontFamily="@font/agoda_light"
+                    android:background="@drawable/edgeroundbottom"
                     android:textColor="@color/white"
                     android:textSize="16.5sp"
-                    app:layout_constraintBottom_toBottomOf="parent" />
+                    android:text="Your VIP Platinum rating will expire in 79 days"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
                 <ImageView
                     android:id="@+id/viplogo"
                     android:layout_width="140dp"
                     android:layout_height="25dp"
                     android:layout_marginEnd="10dp"
-                    app:layout_constraintBottom_toTopOf="@id/vipexp"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/agoda_vipplatinum"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/agoda_vipplatinum" />
+                    app:layout_constraintBottom_toTopOf="@id/vipexp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -528,9 +539,11 @@
                     android:text="Platinum"
                     android:textColor="@color/white"
                     android:textSize="15sp"
+                    app:layout_constraintTop_toTopOf="@id/viplogo"
                     app:layout_constraintBottom_toBottomOf="@id/viplogo"
-                    app:layout_constraintEnd_toEndOf="@id/viplogo"
-                    app:layout_constraintTop_toTopOf="@id/viplogo" />
+                    app:layout_constraintEnd_toEndOf="@id/viplogo"/>
+
+
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -541,8 +554,8 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="30dp"
                 android:text="스텐다드반 박상우 개인과제"
-                android:textColor="#6E6E6E"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:textColor="#6E6E6E"/>
 
 
         </LinearLayout>

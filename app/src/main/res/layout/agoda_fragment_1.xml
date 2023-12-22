@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#F7FCFF"
+    tools:context=".AgodaClone">
+
+    <ImageView
+        android:id="@+id/iv_hotel"
+        android:layout_width="247dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="17dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dimming" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Hotel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_hotel"
+        app:layout_constraintTop_toTopOf="@id/iv_hotel" />
+
+    <ImageView
+        android:id="@+id/iv_flight"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/iv_hotel"
+        app:layout_constraintEnd_toEndOf="@id/iv_private"
+        app:layout_constraintStart_toStartOf="@id/iv_private"
+        app:layout_constraintTop_toTopOf="@id/iv_hotel"
+        app:srcCompat="@drawable/agoda_flight" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Flight"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_flight"
+        app:layout_constraintTop_toTopOf="@id/iv_flight" />
+
+    <ImageView
+        android:id="@+id/iv_rent"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toStartOf="@id/iv_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_hotel"
+        app:srcCompat="@drawable/agoda_timerent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Rent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_rent"
+        app:layout_constraintTop_toTopOf="@id/iv_rent" />
+
+    <ImageView
+        android:id="@+id/iv_activity"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/iv_rent"
+        app:layout_constraintEnd_toStartOf="@id/iv_private"
+        app:layout_constraintStart_toEndOf="@id/iv_rent"
+        app:layout_constraintTop_toTopOf="@id/iv_rent"
+        app:srcCompat="@drawable/agoda_activity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Activity"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_activity"
+        app:layout_constraintTop_toTopOf="@id/iv_activity" />
+
+    <ImageView
+        android:id="@+id/iv_private"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/iv_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_activity"
+        app:layout_constraintTop_toTopOf="@id/iv_activity"
+        app:srcCompat="@drawable/agoda_privateplace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/agoda_medium"
+        android:text="Private"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/iv_private"
+        app:layout_constraintTop_toTopOf="@id/iv_private" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
