@@ -14,10 +14,11 @@
         android:layout_height="115dp"
         android:layout_marginStart="17dp"
         android:clickable="true"
+        android:foreground="@drawable/ripple_effect"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dimming" />
+        app:srcCompat="@drawable/agoda_hotel" />
 
 
     <TextView
@@ -36,7 +37,7 @@
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground"
+        android:foreground="@drawable/ripple_effect"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/iv_hotel"
         app:layout_constraintEnd_toEndOf="@id/iv_private"
@@ -60,9 +61,9 @@
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginTop="16dp"
-        android:scaleType="fitXY"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground"
+        android:foreground="@drawable/ripple_effect"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toStartOf="@id/iv_activity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_hotel"
@@ -84,7 +85,7 @@
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground"
+        android:foreground="@drawable/ripple_effect"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/iv_rent"
         app:layout_constraintEnd_toStartOf="@id/iv_private"
@@ -108,7 +109,7 @@
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:clickable="true"
-        android:foreground="?attr/selectableItemBackground"
+        android:foreground="@drawable/ripple_effect"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="@id/iv_activity"
         app:layout_constraintEnd_toEndOf="parent"
