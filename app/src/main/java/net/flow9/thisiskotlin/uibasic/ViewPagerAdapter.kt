@@ -3,11 +3,12 @@ package net.flow9.thisiskotlin.mbtitest
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import net.flow9.thisiskotlin.uibasic.AgodaNavHome
 import net.flow9.thisiskotlin.uibasic.ScreenSlidePageFragment
 import net.flow9.thisiskotlin.uibasic.R
 
 
-class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
+class ViewPagerAdapter(fragmentActivity: AgodaNavHome) : FragmentStateAdapter(fragmentActivity) {
 
     override fun getItemCount(): Int {
         return 2

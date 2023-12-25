@@ -13,6 +13,24 @@
         android:theme="@style/Theme.UIBasic"
         tools:targetApi="31">
         <activity
+            android:name=".AgodaAgoji"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaNavMore"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaNavCart"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaNavDeals"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaNavHome"
+            android:exported="false" />
+        <activity
+            android:name=".AgodaNavTrip"
+            android:exported="false" />
+        <activity
             android:name=".AgodaMyInfo"
             android:exported="false" />
         <activity
